@@ -42,7 +42,6 @@ switch ($windowsSKU) {
         $global:imagesToPull = @(
             "mcr.microsoft.com/windows/servercore:ltsc2019",
             "mcr.microsoft.com/windows/nanoserver:1809",
-            "mcr.microsoft.com/oss/kubernetes/pause:3.4.1",
             "mcr.microsoft.com/oss/kubernetes/pause:3.6-hotfix.20220114",
             "mcr.microsoft.com/oss/kubernetes-csi/livenessprobe:v2.5.0",
             "mcr.microsoft.com/oss/kubernetes-csi/livenessprobe:v2.6.0",
@@ -62,14 +61,12 @@ switch ($windowsSKU) {
             "mcr.microsoft.com/oss/kubernetes/azure-cloud-node-manager:v1.1.14", # for k8s 1.22.x
             "mcr.microsoft.com/oss/kubernetes/azure-cloud-node-manager:v1.23.9", # for k8s 1.23.x
             "mcr.microsoft.com/oss/kubernetes/azure-cloud-node-manager:v1.23.11", # for k8s 1.23.x
-            "mcr.microsoft.com/azuremonitor/containerinsights/ciprod:win-ciprod05192022",
             "mcr.microsoft.com/azuremonitor/containerinsights/ciprod:win-ciprod06142022")
     }
     "2019-containerd" {
         $global:imagesToPull = @(
             "mcr.microsoft.com/windows/servercore:ltsc2019",
             "mcr.microsoft.com/windows/nanoserver:1809",
-            "mcr.microsoft.com/oss/kubernetes/pause:3.4.1",
             "mcr.microsoft.com/oss/kubernetes/pause:3.6-hotfix.20220114",
             "mcr.microsoft.com/oss/kubernetes-csi/livenessprobe:v2.5.0",
             "mcr.microsoft.com/oss/kubernetes-csi/livenessprobe:v2.6.0",
@@ -90,7 +87,6 @@ switch ($windowsSKU) {
             "mcr.microsoft.com/oss/kubernetes/azure-cloud-node-manager:v1.23.9", # for k8s 1.23.x
             "mcr.microsoft.com/oss/kubernetes/azure-cloud-node-manager:v1.23.11", # for k8s 1.23.x
             "mcr.microsoft.com/oss/kubernetes/azure-cloud-node-manager:v1.24.0", # for k8s 1.24.x
-            "mcr.microsoft.com/azuremonitor/containerinsights/ciprod:win-ciprod05192022",
             "mcr.microsoft.com/azuremonitor/containerinsights/ciprod:win-ciprod06142022")
     }
     "2022-containerd" {
@@ -111,7 +107,6 @@ switch ($windowsSKU) {
             "mcr.microsoft.com/oss/kubernetes/azure-cloud-node-manager:v1.23.9", # for k8s 1.23.x
             "mcr.microsoft.com/oss/kubernetes/azure-cloud-node-manager:v1.23.11", # for k8s 1.23.x
             "mcr.microsoft.com/oss/kubernetes/azure-cloud-node-manager:v1.24.0", # for k8s 1.24.x
-            "mcr.microsoft.com/azuremonitor/containerinsights/ciprod:win-ciprod05192022",
             "mcr.microsoft.com/azuremonitor/containerinsights/ciprod:win-ciprod06142022"
         )
     }
@@ -137,7 +132,6 @@ $global:map = @{
         "https://github.com/Microsoft/SDN/raw/master/Kubernetes/windows/hns.psm1",
         "https://globalcdn.nuget.org/packages/microsoft.applicationinsights.2.11.0.nupkg",
         "https://acs-mirror.azureedge.net/aks-engine/windows/provisioning/signedscripts-v0.0.16.zip",
-        "https://acs-mirror.azureedge.net/ccgakvplugin/v1.1.4/binaries/windows-gmsa-ccgakvplugin-v1.1.4.zip",
         "https://acs-mirror.azureedge.net/ccgakvplugin/v1.1.5/binaries/windows-gmsa-ccgakvplugin-v1.1.5.zip",
         "https://acs-mirror.azureedge.net/aks/windows/cse/aks-windows-cse-scripts-v0.0.8.zip",
         "https://acs-mirror.azureedge.net/aks/windows/cse/aks-windows-cse-scripts-v0.0.10.zip"
